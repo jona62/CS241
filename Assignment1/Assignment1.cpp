@@ -5,11 +5,11 @@
 using namespace std;
 
 bool conjunctive(bool A, bool B) {
-	return (A == 1 && B == 1);
+	return (A && B);
 }
 
 bool disjunction(bool A, bool B) {
-	return ((A == 1 || A == 0) && (B == 1 || B == 0) && (!(A == 0 && B == 0)));
+	return (A || B);
 }
 
 bool negation(bool A){
