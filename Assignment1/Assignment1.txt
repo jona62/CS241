@@ -1,3 +1,8 @@
+// Name: Jonathan James
+// Creation: 02/03/2018
+// Version: 1
+// Prof. Jermaine Reid
+
 1. You will study or you will do work and you will not study or you will not do work implies you will pass or you will not pass and you will study and you will do work implies you will pass and you will not study and you will not do work implies you will not pass.
 
 2.a)  A = Pine trees are tall
@@ -12,8 +17,9 @@
       If and Only if = <-->
       A <--> B --> (B --> A) ^ (A --> B)
 
-3.a)  A --> B <--> !A v B
-      A | B | !A | !A v B | A --> B | A --> B <--> !A v B
+3.a)  A --> B <--> A' v B
+
+      A | B | A' | A' v B | A --> B | A --> B <--> A' v B
       -------------------------------------------------
       T | T | F  |    T   |    T    |         T
       -------------------------------------------------
@@ -24,23 +30,25 @@
       F | F | T  |    T   |    T    |         T
 
 
-  b)  !(A v B) <--> !A ^ !B
-      A | B | (A v B) | !(A v B) | !A | !B | !A ^ !B | !(A v B) <--> !A ^ !B
+  b)  (A' v B) <--> A' ^ B'
+
+      A | B | (A v B) |  (A' v B) | A' | B' | A' ^ B' | (A' v B) <--> A' ^ B'
       ----------------------------------------------------------------------
-      T | T |    T    |    F     |  F |  F |    F    |         T
+      T | T |    T    |     F     |  F |  F |    F    |         T
       ----------------------------------------------------------------------
-      T | F |    T    |    F     |  F |  T |    F    |         T
+      T | F |    T    |     F     |  F |  T |    F    |         T
       ----------------------------------------------------------------------
-      F | T |    T    |    F     |  T |  F |    F    |         T
+      F | T |    T    |     F     |  T |  F |    F    |         T
       ----------------------------------------------------------------------
-      F | F |    F    |    T     |  T |  T |    T    |         T
+      F | F |    F    |     T     |  T |  T |    T    |         T
 
 
 
-Extra-Credit:  A v B --> (!B --> A)
+Extra-Credit:  A v B --> (B' --> A)
       P = A v B => T
-      Q = (!B --> A) = F
+      Q = (B' --> A) = F
       Main Connective is -->
+
       A   |   B   |   P   |   Q
       -------------------------
       T   |   T   |   T   |   T
@@ -49,4 +57,4 @@ Extra-Credit:  A v B --> (!B --> A)
       F   |   F   |   F   |   F
 
 Since an outcome exit that makes P=T and Q=F, then,
-A v B --> (!B --> A) is not a tautology!
+A v B --> (B' --> A) is not a tautology!

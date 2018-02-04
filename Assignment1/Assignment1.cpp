@@ -1,3 +1,8 @@
+// Name: Jonathan James
+// Creation: 02/03/2018
+// Version: 1
+// Prof. Jermaine Reid
+
 #include <iostream>
 #include <string>
 #include <iomanip>
