@@ -30,9 +30,9 @@
       F | F | T  |    T   |    T    |         T
 
 
-  b)  (A' v B) <--> A' ^ B'
+  b)  (A v B)' <--> A' ^ B'
 
-      A | B | (A v B) |  (A' v B) | A' | B' | A' ^ B' | (A' v B) <--> A' ^ B'
+      A | B | (A v B) |  (A v B)' | A' | B' | A' ^ B' | (A v B)' <--> A' ^ B'
       ----------------------------------------------------------------------
       T | T |    T    |     F     |  F |  F |    F    |         T
       ----------------------------------------------------------------------
@@ -49,12 +49,12 @@ Extra-Credit:  A v B --> (B' --> A)
       Q = (B' --> A) = F
       Main Connective is -->
 
-      A   |   B   |   P   |   Q
-      -------------------------
-      T   |   T   |   T   |   T
-      T   |   F   |   T   |   T
-      F   |   T   |   T   |   F
-      F   |   F   |   F   |   F
+      A   |   B   |   B'  |  B' --> A  |   A v B  |  A v B --> (B' --> A)
+      -------------------------------------------------------------------
+      T   |   T   |   F   |     T      |    T     |         T
+      T   |   F   |   T   |     T      |    T     |         T
+      F   |   T   |   F   |     F      |    T     |         T
+      F   |   F   |   T   |     F      |    F     |         T
 
-Since an outcome exit that makes P=T and Q=F, then,
-A v B --> (B' --> A) is not a tautology!
+Since an outcome exist that makes P=T and Q=F, then,
+A v B --> (B' --> A) is a tautology!
