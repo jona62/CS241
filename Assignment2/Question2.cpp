@@ -1,3 +1,7 @@
+// Name: Jonathan James
+// Creation: 02/22/2018
+// Version: 2
+// Prof. Jermaine Reid
 #include <iostream>
 #include <fstream>
 using namespace std;
