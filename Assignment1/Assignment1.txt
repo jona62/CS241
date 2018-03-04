@@ -45,10 +45,7 @@
 
 
 Extra-Credit:  A v B --> (B' --> A)
-      P = A v B => T
-      Q = (B' --> A) = F
-      Main Connective is -->
-
+Truth Table
       A   |   B   |   B'  |  B' --> A  |   A v B  |  A v B --> (B' --> A)
       -------------------------------------------------------------------
       T   |   T   |   F   |     T      |    T     |         T
@@ -56,5 +53,22 @@ Extra-Credit:  A v B --> (B' --> A)
       F   |   T   |   F   |     F      |    T     |         T
       F   |   F   |   T   |     F      |    F     |         T
 
-Since an outcome exist that makes P=T and Q=F, then,
-A v B --> (B' --> A) is a tautology!
+      P = A v B => T
+      Q = (B' --> A) = F
+
+Tautology test
+       | A | B
+    -----------
+    P  | T | T
+    -----------
+    Q  | F | F
+
+    Both A and B have to be false for Q to maintain its truth value, but
+    if A and B are both false, then P can't maintain its positive value, hence
+    a contradiction. Therefore P-->Q is a tautology.
+
+
+  Derivation Rule
+      A v B     by hypothesis
+      B v A     by commutative
+      B' --> A  by implication 
