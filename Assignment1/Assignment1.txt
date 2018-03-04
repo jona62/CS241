@@ -1,0 +1,74 @@
+// Name: Jonathan James
+// Creation: 02/03/2018
+// Version: 1
+// Prof. Jermaine Reid
+
+1. You will study or you will do work and you will not study or you will not do work implies you will pass or you will not pass and you will study and you will do work implies you will pass and you will not study and you will not do work implies you will not pass.
+
+2.a)  A = Pine trees are tall
+      and = ^
+      B = Prickly
+
+      A ^ B
+
+  b)  A = Mary will come to the party
+      If and Only if = <-->
+      B = John goes to the party
+
+      A <--> B --> (B --> A) ^ (A --> B)
+
+3.a)  A --> B <--> A' v B
+
+      A | B | A' | A' v B | A --> B | A --> B <--> A' v B
+      -------------------------------------------------
+      T | T | F  |    T   |    T    |         T
+      -------------------------------------------------
+      T | F | F  |    F   |    F    |         T
+      -------------------------------------------------
+      F | T | T  |    T   |    T    |         T
+      -------------------------------------------------
+      F | F | T  |    T   |    T    |         T
+
+
+  b)  (A v B)' <--> A' ^ B'
+
+      A | B | (A v B) |  (A v B)' | A' | B' | A' ^ B' | (A v B)' <--> A' ^ B'
+      ----------------------------------------------------------------------
+      T | T |    T    |     F     |  F |  F |    F    |         T
+      ----------------------------------------------------------------------
+      T | F |    T    |     F     |  F |  T |    F    |         T
+      ----------------------------------------------------------------------
+      F | T |    T    |     F     |  T |  F |    F    |         T
+      ----------------------------------------------------------------------
+      F | F |    F    |     T     |  T |  T |    T    |         T
+
+
+
+Extra-Credit:  A v B --> (B' --> A)
+Truth Table
+      A   |   B   |   B'  |  B' --> A  |   A v B  |  A v B --> (B' --> A)
+      -------------------------------------------------------------------
+      T   |   T   |   F   |     T      |    T     |         T
+      T   |   F   |   T   |     T      |    T     |         T
+      F   |   T   |   F   |     F      |    T     |         T
+      F   |   F   |   T   |     F      |    F     |         T
+
+      P = A v B => T
+      Q = (B' --> A) = F
+
+Tautology test
+       | A | B
+    -----------
+    P  | T | T
+    -----------
+    Q  | F | F
+
+    Both A and B have to be false for Q to maintain its truth value, but
+    if A and B are both false, then P can't maintain its positive value, hence
+    a contradiction. Therefore P-->Q is a tautology.
+
+
+  Derivation Rule
+      A v B     by hypothesis
+      B v A     by commutative
+      B' --> A  by implication 
