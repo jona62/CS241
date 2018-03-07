@@ -16,22 +16,20 @@ int main(){
 }
 
 bool IsSet(string filename){
-	ofstream ofile;
-	ofile.open(filename);
-	int x=0;
-	if(ofile.is_open()){
-		while(!ofile.eof()){
-			x++;
-		}
-	int data_arr[x];
-	int iter = 0, num;
-		while(!ofile.eof()){
-			ofile>>num;
-			data_arr[iter] = num;
+	ifstream ifile;
+	int data_arr[1000];
+	ifile.open(filename);
+	
+	int iter = 0;
+	if(ifile.is_open()){
+		while(ifile>>data_arr[iter]){
 			iter++;
 		}
-		for(int i=0; i<x; i++){
-			for(int j=1; j<x; j++){
+	}
+		ifile.close();
+
+		for(int i=0; i<iter; i++){
+			for(int j=1; j<iter; j++){
 				if(i != j){
 					if(data_arr[j] == data_arr[i]){
 						return false;
@@ -39,6 +37,6 @@ bool IsSet(string filename){
 				}
 			}
 		}
-	}
+		
+	return true;
 }
-
