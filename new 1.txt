@@ -1,0 +1,11 @@
+#include "prime.h"
+using namespace std;
+
+int main() {
+  int input = 56;
+  PrimeFactorization(input);
+  
+  primeNums();
+
+  return 0;
+}
