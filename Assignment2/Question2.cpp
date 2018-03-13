@@ -3,6 +3,7 @@
 // Version: 2
 // Prof. Jermaine Reid
 #include <iostream>
+#include <string>
 #include <fstream>
 using namespace std;
 
