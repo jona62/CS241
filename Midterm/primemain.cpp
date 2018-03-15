@@ -1,7 +1,7 @@
 #include "prime.h"
-
+#include "extra_credit.h"
 int main(){
 	primeNums();
-	//primeFactorization(56);
+	xtra();
 return 0;
 }
