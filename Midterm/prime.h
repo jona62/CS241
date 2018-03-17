@@ -33,21 +33,12 @@ void primeNums(){
 void primeFactorization(int input){
   ifstream ifile;
   int exponents[100];
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> c70f00f35d35233b2570c5006404d6bc8db479bf
 	// CLEAN START
 	for (int l=0 ; l < 100; l++){
 			exponents[l] = 0;
-
 	}
-<<<<<<< HEAD
-=======
->>>>>>> fb5ae2cdceb2a9f7176fa59082685bb174b0a3f6
-=======
->>>>>>> c70f00f35d35233b2570c5006404d6bc8db479bf
+
   ifile.open("primeNum.txt");
 
   int iter = 0;
@@ -72,14 +63,6 @@ void primeFactorization(int input){
 			if(input % arr[i] == 0){
 				input /= arr[i];
 				exponents[j] = arr[i];
-<<<<<<< HEAD
-<<<<<<< HEAD
-				// cout <<"j: "<< exponents[j] << " ";
-=======
->>>>>>> fb5ae2cdceb2a9f7176fa59082685bb174b0a3f6
-=======
-				// cout <<"j: "<< exponents[j] << " ";
->>>>>>> c70f00f35d35233b2570c5006404d6bc8db479bf
 				j++;
 			}
 			else i++;
@@ -93,28 +76,13 @@ void primeFactorization(int input){
 			if(exponents[i] == exponents[i+1]){
 				count++;
 			}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c70f00f35d35233b2570c5006404d6bc8db479bf
 			// redo this part
 			else if (exponents[i] != exponents[i+1] || exponents[i] == exponents[j]){
 				cout<<"("<<exponents[i]<<"^"<<count<<") ";
 			  count = 1;
 			}
-<<<<<<< HEAD
 
-=======
-
-			else if(exponents[i] != exponents[i+1] || exponents[i] == exponents[j]){
-				cout<<"("<<exponents[i]<<"^"<<count<<") ";
-			  count = 1;
-			}
->>>>>>> fb5ae2cdceb2a9f7176fa59082685bb174b0a3f6
-=======
->>>>>>> c70f00f35d35233b2570c5006404d6bc8db479bf
     }
-
 
   cout<<"\n";
 
