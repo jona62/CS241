@@ -1,8 +1,9 @@
-#include "prime.h"
 #include "extra_credit.h"
+#include "prime.h"
+
 int main(){
-	primeNums();
-	ask();
-	xtra();
-return 0;
+  primeNums();
+  xtra();
+  ask();
+  return 0;
 }

@@ -32,22 +32,22 @@ void primeNums(){
 //Finds the prime factors of a number and saves to an array
 void primeFactorization(int input){
   ifstream ifile;
-  int exponents[100];
+  int exponents[100] = {0};
 
 	// CLEAN START
-	for (int l=0 ; l < 100; l++){
-			exponents[l] = 0;
-	}
+	// for (int l=0 ; l < 100; l++){
+	// 		exponents[l] = 0;
+	// }
 
   ifile.open("primeNum.txt");
 
   int iter = 0;
-	int arr[1000];
+	int arr[1000] = {0};
 
   // CLEAN START
-	for (int l=0 ; l < 1000; l++){
-			arr[l] = 0;
-	}
+	// for (int l=0 ; l < 1000; l++){
+	// 		arr[l] = 0;
+	// }
 
   if(ifile.is_open()){
 	  while(ifile >> arr[iter]){
