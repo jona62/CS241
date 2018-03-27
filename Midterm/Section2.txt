@@ -4,5 +4,5 @@ a. sum of Factors   - p + 1
 b. sum of Factors   - p + q + 1
    count of Factors - 3
 
-c. sum of Factors   - p + p_n + 1 {Where n = power}
-   count of Factors - n + 1
+c. sum of Factors   - p + m {Where m = power}
+   count of Factors - m + 1
