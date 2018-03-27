@@ -1,8 +1,8 @@
 a. sum of Factors   - p + 1
    count of Factors - 2
 
-b. sum of Factors   - p + q + 1
-   count of Factors - 3
+b. sum of Factors   - (p + 1) (q + 1)
+   count of Factors - 4
 
-c. sum of Factors   - p + p ^ m + 1 {Where m = power}
+c. sum of Factors   - (p^m + p ^ m-1 +.... + p^2 + p) + 1 
    count of Factors - m + 1
