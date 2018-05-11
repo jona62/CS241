@@ -10,7 +10,8 @@
 23|859 = F
 Therefore 859 is a prime number
 
-2.
+2.In a book
+
 3. GCD(403, 91)
   403 = 91*q + r
   403 = 91*4 + 39
@@ -19,4 +20,4 @@ Therefore 859 is a prime number
 
    Therefore GCD = 13
 
-5.
+5. In a book
