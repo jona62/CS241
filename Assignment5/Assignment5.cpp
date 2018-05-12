@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -22,14 +21,14 @@ void perm3(){
           continue;
           if(ofile.is_open()){
 
-          cout<<str[i]<<str[j]<<str[k]<<"\n";
+//           cout<<str[i]<<str[j]<<str[k]<<"\n";
           ofile<<str[i]<<str[j]<<str[k]<<"\n";
           count++;
           counter++;
       }
     }
   }
-  cout<<counter;
+//   cout<<counter;
   }
   ofile.close();
 }
