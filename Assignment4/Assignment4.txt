@@ -10,7 +10,7 @@
 23|859 = F
 Therefore 859 is a prime number
 
-2.In a book
+2.In the Discrete Structures book
 
 3. GCD(403, 91)
   403 = 91*q + r
@@ -20,4 +20,4 @@ Therefore 859 is a prime number
 
    Therefore GCD = 13
 
-5. In a book
+5. In the Discrete Structures book
