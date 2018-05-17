@@ -24,7 +24,7 @@ void goldBach(){
   while(ifile>>num){
     for(int j=0; j<2000; j++){
       if(isPrime(j)){
-        if((num + j) % 2 == 0){
+        if((num + j) % 2 == 0 && ((num + j)) <= 2000){
           ofile<<num <<" + "<< j << " = "<<num + j<<endl;
         }
       }
