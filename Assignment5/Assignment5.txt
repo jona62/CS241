@@ -18,14 +18,14 @@ c.  4C1 * 6C2 * 3C1 + 6C2 + 6C1 * 5C2
     n! / r!(n-r)!
 
   = 4 * 15 * 3 + 15 * 6 * 10
-  = 240 + 900
-  = 1140
+  = 180 + 900
+  = 1080
 
 d. P(2,4) = 2^4 = 16
 
-2.a.
-  b.
-  c.
+2.a. k + 2 shoes
+  b. 40
+  c. 2(k - 1) -1
   d. There are n = 12 months, but we have 2n+1 people, Therefore at least 3 people were born in the same month.
 
 3.a.  13C2 = 156 possible pairs
