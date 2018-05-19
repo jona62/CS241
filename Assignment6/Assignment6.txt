@@ -5,9 +5,9 @@
 
 2.a. Symmetric, Reflexive and Transitive
   b. Symmetric, Reflexive and Transitive
-  c. Symmetric, Reflexive and Transitive
-  d. Reflexive and Symmetric
-
+  c. Symmetric and Transitive
+  d. Reflexive
+  
 3.a. Surjective
   b. Injective
   c. Bijective
