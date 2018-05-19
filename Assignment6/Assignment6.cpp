@@ -26,9 +26,9 @@ int main() {
   print(A);
   cout<<"and\n";
   print(B);
-  // cout<<"is\n";
-  // mult2(A,B,C);
-  // print(C);
+  cout<<"is\n";
+  mult2(A,B,C);
+  print(C);
 
   return 0;
 }
@@ -36,7 +36,10 @@ int main() {
 void mult2(int A[][2], int B[][2], int R[][2]){
   for(int row=0; row<2; row++){
     for(int col=0; col<2; col++){
-
+      R[row][col] = 0;
+        for (int i=0; i < 2; i++){
+          R[row][col] += A[row][i] * B[i][col];
+        }
     }
   }
 }
